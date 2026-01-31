@@ -1,0 +1,76 @@
+# Cherry Studio - Docker Compose 配置
+# 用途：简化 Docker 操作，提供多种使用场景
+
+version: '3.8'
+
+services:
+  # 开发环境
+  dev:
+    build:
+      context: .
+      target: dev
+    volumes:
+      # 挂载源代码（支持热重载）
+      - .:/app
+      # 排除 node_modules，使用容器内的
+      - /app/node_modules
+    ports:
+      - "5173:5173"  # Vite 开发服务器
+      - "9222:9222"  # Chrome DevTools
+    environment:
+      - NODE_ENV=development
+    command: pnpm dev
+    
+  # 构建环境（用于构建可分发的应用）
+  builder:
+    build:
+      context: .
+      target: builder
+    volumes:
+      # 挂载输出目录，将构建产物输出到宿主机
+      - ./dist:/app/dist
+      - ./out:/app/out
+    environment:
+      - NODE_ENV=production
+    command: pnpm build
+
+  # CI/CD 构建环境（包含所有构建工具）
+  ci-builder:
+    build:
+      context: .
+      target: ci-builder
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./dist:/app/dist
+      - ./release:/app/release
+    environment:
+      - CI=true
+      - NODE_ENV=production
+    command: bash -c "pnpm install && pnpm build && pnpm build:linux:x64"
+
+  # 构建 Linux 版本
+  build-linux:
+    build:
+      context: .
+      target: ci-builder
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./release:/app/release
+    environment:
+      - NODE_ENV=production
+    command: bash -c "pnpm install --frozen-lockfile && pnpm build && pnpm build:linux:x64"
+
+  # 构建所有平台（需要相应的构建环境）
+  build-all:
+    build:
+      context: .
+      target: ci-builder
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - ./release:/app/release
+    environment:
+      - NODE_ENV=production
+    command: bash -c "pnpm install --frozen-lockfile && pnpm build && pnpm build:linux"

@@ -323,3 +323,29 @@ Should you require a commercial license that provides an exemption from the AGPL
 [commercial-link]: mailto:license@cherry-ai.com?subject=Commercial%20License%20Inquiry
 [sponsor-shield]: https://img.shields.io/badge/Sponsor-FF6699.svg?logo=githubsponsors&logoColor=white
 [sponsor-link]: https://github.com/CherryHQ/cherry-studio/blob/main/docs/sponsor.md
+
+## 🐳 Docker Support
+
+Cherry Studio supports Docker for build and development environments.
+
+### Quick Start
+
+```bash
+# Build Linux version
+docker-compose run --rm build-linux
+
+# Output: ./release/*.deb, *.rpm, *.AppImage
+```
+
+### Documentation
+
+- 📄 [Docker Guide (English)](./docs/en/DOCKER.md)
+- 📄 [Docker 指南 (中文)](./docs/zh/DOCKER.md)
+
+### Use Cases
+
+- ✅ Build environment (Recommended)
+- ✅ CI/CD automation
+- ✅ Development environment
+- ⚠️ Running app (Not recommended - Desktop app)
+
