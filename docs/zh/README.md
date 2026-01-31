@@ -319,3 +319,19 @@ https://docs.cherry-ai.com
 [commercial-link]: mailto:license@cherry-ai.com?subject=商业授权咨询
 [sponsor-shield]: https://img.shields.io/badge/赞助支持-FF6699.svg?logo=githubsponsors&logoColor=white
 [sponsor-link]: https://github.com/CherryHQ/cherry-studio/blob/main/docs/sponsor.md
+
+## 技术文档
+
+### 记忆功能实现原理
+
+详细解析 Cherry Studio 的记忆功能实现，包括向量数据库、RAG 架构和系统权限机制。
+
+📄 [记忆功能技术文档（面向 .NET 开发者）](./technical/MEMORY_IMPLEMENTATION.md)
+
+**内容包括**:
+- 记忆功能的 RAG 架构设计
+- LibSQL 嵌入式向量数据库使用
+- 本地运行要求和配置
+- 权限和后台运行机制
+- 与 .NET 技术栈的详细对比
+
