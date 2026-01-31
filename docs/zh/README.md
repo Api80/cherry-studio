@@ -335,3 +335,18 @@ https://docs.cherry-ai.com
 - 权限和后台运行机制
 - 与 .NET 技术栈的详细对比
 
+
+### Embedding 算法与本地实现
+
+详细解析向量化(Embedding)的本地实现方案，以及如何使用 .NET 重构 Cherry Studio。
+
+�� [Embedding 算法与 .NET 实现方案](./technical/EMBEDDING_ALGORITHMS_AND_DOTNET.md)
+
+**内容包括**:
+- 本地 Embedding 算法详解（TF-IDF, Word2Vec, Sentence-BERT）
+- Ollama 本地 Embedding 使用指南
+- ONNX Runtime 完全离线方案
+- .NET 重构完整实现方案（WPF, Avalonia, Semantic Kernel）
+- Electron vs .NET 优缺点深度对比
+- 70+ 种 Embedding 模型介绍
+
