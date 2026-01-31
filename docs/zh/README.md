@@ -350,3 +350,23 @@ https://docs.cherry-ai.com
 - Electron vs .NET 优缺点深度对比
 - 70+ 种 Embedding 模型介绍
 
+
+### Ollama vs ONNX Runtime 对比
+
+快速了解两种本地 Embedding 方案的区别，帮助你选择最适合的方案。
+
+📄 [Ollama vs ONNX Runtime 详细对比](./technical/OLLAMA_VS_ONNX.md)
+
+**内容包括**:
+- Ollama 和 ONNX Runtime 的定义和特点
+- 安装配置难度对比
+- 性能和资源占用对比
+- 适用场景分析
+- 代码量对比（0行 vs 200+行）
+- 开发和维护成本分析
+- Cherry Studio 为什么选择 Ollama
+
+**快速结论**: 
+- ✅ 推荐使用 **Ollama**（适合 90% 场景）
+- ⚠️ 仅在特殊情况使用 ONNX Runtime（嵌入式、移动端）
+
