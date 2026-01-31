@@ -319,3 +319,101 @@ https://docs.cherry-ai.com
 [commercial-link]: mailto:license@cherry-ai.com?subject=商业授权咨询
 [sponsor-shield]: https://img.shields.io/badge/赞助支持-FF6699.svg?logo=githubsponsors&logoColor=white
 [sponsor-link]: https://github.com/CherryHQ/cherry-studio/blob/main/docs/sponsor.md
+
+## 技术文档
+
+### 记忆功能实现原理
+
+详细解析 Cherry Studio 的记忆功能实现，包括向量数据库、RAG 架构和系统权限机制。
+
+📄 [记忆功能技术文档（面向 .NET 开发者）](./technical/MEMORY_IMPLEMENTATION.md)
+
+**内容包括**:
+- 记忆功能的 RAG 架构设计
+- LibSQL 嵌入式向量数据库使用
+- 本地运行要求和配置
+- 权限和后台运行机制
+- 与 .NET 技术栈的详细对比
+
+
+### Embedding 算法与本地实现
+
+详细解析向量化(Embedding)的本地实现方案，以及如何使用 .NET 重构 Cherry Studio。
+
+�� [Embedding 算法与 .NET 实现方案](./technical/EMBEDDING_ALGORITHMS_AND_DOTNET.md)
+
+**内容包括**:
+- 本地 Embedding 算法详解（TF-IDF, Word2Vec, Sentence-BERT）
+- Ollama 本地 Embedding 使用指南
+- ONNX Runtime 完全离线方案
+- .NET 重构完整实现方案（WPF, Avalonia, Semantic Kernel）
+- Electron vs .NET 优缺点深度对比
+- 70+ 种 Embedding 模型介绍
+
+
+### Ollama vs ONNX Runtime 对比
+
+快速了解两种本地 Embedding 方案的区别，帮助你选择最适合的方案。
+
+📄 [Ollama vs ONNX Runtime 详细对比](./technical/OLLAMA_VS_ONNX.md)
+
+**内容包括**:
+- Ollama 和 ONNX Runtime 的定义和特点
+- 安装配置难度对比
+- 性能和资源占用对比
+- 适用场景分析
+- 代码量对比（0行 vs 200+行）
+- 开发和维护成本分析
+- Cherry Studio 为什么选择 Ollama
+
+**快速结论**: 
+- ✅ 推荐使用 **Ollama**（适合 90% 场景）
+- ⚠️ 仅在特殊情况使用 ONNX Runtime（嵌入式、移动端）
+
+
+### .NET 重写可行性方案
+
+全面的技术可行性分析，为考虑用 .NET 重写 Cherry Studio 提供决策依据。
+
+📄 [.NET 重写可行性方案](./technical/DOTNET_REWRITE_FEASIBILITY.md)
+
+**内容包括**:
+- 现状分析（28万行 TypeScript 代码）
+- 技术选型（Avalonia UI, WPF, MAUI 等对比）
+- 详细架构设计（完整代码示例）
+- 分阶段实施路线图（8-12个月）
+- 工作量和成本估算（200-250万元）
+- 风险评估和缓解措施
+- ROI 成本效益分析
+
+**核心结论**: 
+- ✅ 技术上完全可行
+- ⚠️ 需要 8-12 个月，3-5 人团队
+- 💰 初期投资 200-250 万元
+- 📈 长期（5年+）ROI 为正
+- 🎯 推荐渐进式重写策略
+
+
+## 💻 系统要求
+
+### Windows
+- **操作系统**: Windows 10 (1809+) 64位 或 Windows 11
+- **处理器**: 双核 2.0 GHz 或更高
+- **内存**: 4 GB（推荐 8 GB）
+- **存储空间**: 500 MB 可用空间（推荐 2 GB）
+- **网络**: 互联网连接
+
+### macOS
+- **操作系统**: macOS 11 Big Sur 或更高版本
+- **处理器**: Intel i3 或 Apple M1 或更新
+- **内存**: 4 GB（推荐 8 GB）
+- **存储空间**: 500 MB 可用空间（推荐 2 GB）
+
+### Linux
+- **操作系统**: Ubuntu 20.04+, Debian 10+, Fedora 33+ (64位)
+- **处理器**: 双核 2.0 GHz 或更高
+- **内存**: 4 GB（推荐 8 GB）
+- **存储空间**: 500 MB 可用空间（推荐 2 GB）
+
+📄 详细系统要求请查看: [完整系统要求文档](./SYSTEM_REQUIREMENTS.md)
+

@@ -323,3 +323,55 @@ Should you require a commercial license that provides an exemption from the AGPL
 [commercial-link]: mailto:license@cherry-ai.com?subject=Commercial%20License%20Inquiry
 [sponsor-shield]: https://img.shields.io/badge/Sponsor-FF6699.svg?logo=githubsponsors&logoColor=white
 [sponsor-link]: https://github.com/CherryHQ/cherry-studio/blob/main/docs/sponsor.md
+
+## 🐳 Docker Support
+
+Cherry Studio supports Docker for build and development environments.
+
+### Quick Start
+
+```bash
+# Build Linux version
+docker-compose run --rm build-linux
+
+# Output: ./release/*.deb, *.rpm, *.AppImage
+```
+
+### Documentation
+
+- 📄 [Docker Guide (English)](./docs/en/DOCKER.md)
+- 📄 [Docker 指南 (中文)](./docs/zh/DOCKER.md)
+
+### Use Cases
+
+- ✅ Build environment (Recommended)
+- ✅ CI/CD automation
+- ✅ Development environment
+- ⚠️ Running app (Not recommended - Desktop app)
+
+
+## 💻 System Requirements
+
+### Windows
+- **OS**: Windows 10 (1809+) 64-bit or Windows 11
+- **CPU**: Dual-core 2.0 GHz or higher
+- **RAM**: 4 GB (8 GB recommended)
+- **Storage**: 500 MB free space (2 GB recommended)
+- **Network**: Internet connection
+
+### macOS
+- **OS**: macOS 11 Big Sur or later
+- **CPU**: Intel i3 or Apple M1 or later
+- **RAM**: 4 GB (8 GB recommended)
+- **Storage**: 500 MB free space (2 GB recommended)
+
+### Linux
+- **OS**: Ubuntu 20.04+, Debian 10+, Fedora 33+ (64-bit)
+- **CPU**: Dual-core 2.0 GHz or higher
+- **RAM**: 4 GB (8 GB recommended)
+- **Storage**: 500 MB free space (2 GB recommended)
+
+📄 For detailed requirements, see:
+- [System Requirements (English)](./docs/en/SYSTEM_REQUIREMENTS.md)
+- [系统要求 (中文)](./docs/zh/SYSTEM_REQUIREMENTS.md)
+
