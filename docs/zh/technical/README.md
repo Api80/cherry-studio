@@ -181,3 +181,49 @@ docs/zh/technical/
 
 **最后更新**: 2026-01-31  
 **维护者**: Cherry Studio 技术团队
+
+---
+
+### 4. .NET 重写可行性方案
+
+**文件**: [DOTNET_REWRITE_FEASIBILITY.md](./DOTNET_REWRITE_FEASIBILITY.md)  
+**适合**: 技术决策者、架构师、投资者
+
+**内容概要**:
+- ✅ 现状分析：28万行代码，1500个文件
+- ✅ 技术选型：Avalonia UI vs WPF vs MAUI
+- ✅ 架构设计：完整的 .NET 架构方案
+- ✅ 实施路线：4个阶段，8-12个月
+- ✅ 成本估算：200-250万元，3-5人团队
+- ✅ 风险评估：技术、项目、业务风险
+- ✅ ROI分析：5年以上为正
+
+**关键结论**:
+- **技术可行性**: ⭐⭐⭐⭐⭐（完全可行）
+- **性能提升**: 3-5倍启动速度，60-75%内存节省
+- **推荐方案**: 渐进式重写（风险可控）
+- **时间成本**: 8-12个月
+- **资金成本**: 200-250万元
+
+**四种方案对比**:
+1. 全面重写（激进）- 高风险高回报
+2. 渐进式重写（推荐）- 风险可控 ⭐⭐⭐⭐⭐
+3. 混合方案（折中）- 复用现有 UI
+4. 不重写（保守）- 优化现有版本
+
+---
+
+## 🎯 按场景查找
+
+### "我想用 .NET 重写项目，可行吗？"
+→ 查看 [DOTNET_REWRITE_FEASIBILITY.md](./DOTNET_REWRITE_FEASIBILITY.md) - 完整可行性分析
+
+### "重写需要多少成本和时间？"
+→ 查看 [DOTNET_REWRITE_FEASIBILITY.md](./DOTNET_REWRITE_FEASIBILITY.md) 第 6 节 - 工作量估算
+
+### "应该选择哪个 .NET UI 框架？"
+→ 查看 [DOTNET_REWRITE_FEASIBILITY.md](./DOTNET_REWRITE_FEASIBILITY.md) 第 3.1 节 - 推荐 Avalonia UI
+
+### "重写有什么风险？"
+→ 查看 [DOTNET_REWRITE_FEASIBILITY.md](./DOTNET_REWRITE_FEASIBILITY.md) 第 7 节 - 风险评估
+
