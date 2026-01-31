@@ -349,3 +349,29 @@ docker-compose run --rm build-linux
 - ✅ Development environment
 - ⚠️ Running app (Not recommended - Desktop app)
 
+
+## 💻 System Requirements
+
+### Windows
+- **OS**: Windows 10 (1809+) 64-bit or Windows 11
+- **CPU**: Dual-core 2.0 GHz or higher
+- **RAM**: 4 GB (8 GB recommended)
+- **Storage**: 500 MB free space (2 GB recommended)
+- **Network**: Internet connection
+
+### macOS
+- **OS**: macOS 11 Big Sur or later
+- **CPU**: Intel i3 or Apple M1 or later
+- **RAM**: 4 GB (8 GB recommended)
+- **Storage**: 500 MB free space (2 GB recommended)
+
+### Linux
+- **OS**: Ubuntu 20.04+, Debian 10+, Fedora 33+ (64-bit)
+- **CPU**: Dual-core 2.0 GHz or higher
+- **RAM**: 4 GB (8 GB recommended)
+- **Storage**: 500 MB free space (2 GB recommended)
+
+📄 For detailed requirements, see:
+- [System Requirements (English)](./docs/en/SYSTEM_REQUIREMENTS.md)
+- [系统要求 (中文)](./docs/zh/SYSTEM_REQUIREMENTS.md)
+
